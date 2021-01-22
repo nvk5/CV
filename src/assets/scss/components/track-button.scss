@@ -1,0 +1,13 @@
+.track-button {
+    background: none;
+    transition: color .5s ease;
+
+    &:hover,
+    &:focus {
+        color: var(--color-hover);
+    }
+
+    &.active {
+        color: var(--color-active);
+    }
+}

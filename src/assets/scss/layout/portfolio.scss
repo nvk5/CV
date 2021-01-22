@@ -1,0 +1,42 @@
+.portfolio {
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-auto-rows: minmax(600px, auto);
+        grid-gap: 50px;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__tab-btn {
+        min-height: 50px;
+        margin: 5px 0;
+        padding: 8px;
+    }
+
+    &__work {
+        box-shadow: var(--shadow-flat);
+        padding: 30px;
+        border-radius: var(--border-radius);
+
+        &.hide {
+            animation: fadeOut .5s linear;
+          }
+          
+        &.show {
+            animation: fadeIn .5s linear;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
+    }
+}

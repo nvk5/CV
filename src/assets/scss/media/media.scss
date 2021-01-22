@@ -1,0 +1,150 @@
+/* Large Devices, Desktops, Tablets landscape 992-1199 */
+@media only screen and (max-width : 1199.98px) {
+    .single-project__content {
+        grid-template: "picture picture" auto
+                       "buttons buttons" minmax(70px, auto)
+                       "block block" auto
+                        /1fr;
+    }
+
+}
+	
+/* Medium Devices, Tablets portrait 768-991 */
+@media screen and (max-width : 991.98px) {
+    :root {
+        --fsz-main: 90%;
+    }
+
+    .portfolio__wrap {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .portfolio__work {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .tab-content__section {
+        &.show {
+            animation: fadeIn .5s linear;
+            clip-path: none;
+        }
+        &.hide {
+            animation: fadeOut .5s linear;
+            clip-path: none;
+        }
+    }
+
+    .resume__wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .resume__photo {
+        margin: 0 auto 20px;
+    }
+}
+
+/* Small Devices, Phones (landscape) 576-767 */
+@media screen and (max-width : 767.98px) {
+    .single-project {
+        height: 120vh;
+        padding-bottom: 20vh;
+
+        &__block {
+            padding: 0;
+            padding-top: 50px;
+        }
+
+        &__content {
+            padding: 0;
+            padding-top: 80px;
+        }
+    }
+
+    .page__block--header {
+        padding-top: 90px;
+    }
+}
+
+
+/* Extra Small Devices, Phones (portrait) 480-575 */
+@media screen and (max-width : 575.98px) {
+    :root {
+        --fsz-main: 80%;
+    }
+
+    .header__logo {
+        margin-bottom: 20px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .tab-content__section {
+        padding: 20px;
+    }
+
+    .contacts__block {
+        padding: 30px 15px;
+    }
+
+    .contacts__link {
+        padding: 8px 0;
+    }
+
+    .socials__link {
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .skills__list {
+        padding: 0;
+    }
+
+    .single-project__section {
+        padding: 15px;
+    }
+
+    .project-details {
+        &__headline,
+        &__result {
+            flex: 1 1 100%;
+        }
+
+        &__headline {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .resume__photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .socials {
+        margin: -5px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item {
+            margin: 5px;
+        }
+    }
+}
+	
+/* Custom, iPhone Retina 0 - 320 */
+@media only screen and (max-width : 320px) {
+    .single-project__headline {
+        &::before {
+            margin-right: 10px;
+        }
+        &::after {
+            margin-left: 10px;
+        }
+    }
+}

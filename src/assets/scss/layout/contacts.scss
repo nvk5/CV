@@ -1,0 +1,36 @@
+.contacts {
+    &__wrap {
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    &__block {
+        display: inline-flex;
+        flex-direction: column;
+        box-shadow: var(--shadow-pressed);
+        border-radius: var(--border-radius);
+        padding: 40px;
+    }
+
+    &__text {
+        font-size: rem(20px);
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        margin-right: 10px;
+    }
+
+    &__link {
+        transition: color .4s ease, letter-spacing .4s ease;
+        line-height: 1.5;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--color-hover);
+            letter-spacing: .05rem;
+        }
+    }
+}

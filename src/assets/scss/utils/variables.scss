@@ -1,0 +1,42 @@
+$root-font-size: 16px;
+
+:root {
+    --ff-main: 'GothamProRegular';
+    --lh-main: 1.2;
+    --fsz-main: 100%;
+    --border-radius: .55rem;
+    --border-radius-track: 30px;
+    --border: .0625rem solid var(--color-border);
+    --color-scheme-bg: var(--gradient);
+    --color-scheme-shadow: 0 0 0 5px var(--color-border);
+    --color-scheme-thumb-bg: var(--gradient-inverse);
+    
+
+    --gradient:  linear-gradient(0deg, #4c4c4c, #000);
+    --gradient-inverse: linear-gradient(180deg, #4c4c4c, #000);
+    --shadow-flat: 3px 3px 6px #121212, -3px -3px 6px #2c2c2c;
+    --shadow-pressed: inset 2px 2px 5px #121212, inset -3px -3px 7px #2c2c2c;
+    --bg-color: linear-gradient(225deg, #212121, #1c1c1c);
+    --color: rgba(255, 255, 255, 0.7);
+    --color-hover: rgb(255, 255, 255);
+    --color-active: rgb(255, 255, 255);
+    --color-headline: rgb(222, 222, 222);
+    --color-text: rgb(158, 158, 158);
+    --color-border: rgb(53, 53, 53);
+    --color-card-overlay: rgba(28, 28, 28, .5);
+}
+
+:root.light {
+    --gradient:  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(200,200,205,1) 57%);
+    --gradient-inverse: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(200,200,205,1) 57%);
+    --shadow-flat: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    --shadow-pressed: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+    --bg-color: rgb(230, 231, 238);
+    --color: rgb(49, 52, 75);
+    --color-hover: rgb(97, 102, 143);
+    --color-active: rgb(49, 52, 75);
+    --color-headline: rgb(49, 52, 75);
+    --color-text: rgb(68, 71, 106);
+    --color-border: rgb(209, 217, 230);
+    --color-card-overlay: rgba(230,231,238, .5);
+}

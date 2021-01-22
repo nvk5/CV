@@ -1,0 +1,108 @@
+.single-project {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    background: var(--bg-color);
+    overflow-y: auto;
+    transition: opacity .5s ease;
+    display: none;
+    outline: none;
+    z-index: 99999;
+
+    &.show {
+        animation: fadeIn .5s linear;
+    }
+
+    &.hide {
+        animation: fadeOut .5s linear;
+    }
+
+    &__container {
+        padding: 30px 15px;
+    }
+
+    &__section {
+        padding: 30px;
+        position: relative;
+        box-shadow: var(--shadow-flat);
+        background: var(--bg-color);
+    }
+
+    &__content {
+        display: grid;
+        grid-template: "picture block" minmax(200px, 270px)
+                       "buttons block" minmax(70px, 1fr)
+                        /1fr 1.5fr;
+        grid-gap: 20px;
+        padding: 30px;
+        padding-top: 50px;
+    }
+
+    &__image {
+        grid-area: picture;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__buttons {
+        grid-area: buttons;
+        margin: 0 -10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__block {
+        grid-area: block;
+        display: grid;
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    &__details {
+        font-size: rem(18px);
+    }
+
+    &__headline {
+        font-size: rem(30px);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: var(--color);
+        }
+
+        &::before {
+            margin-right: 20px;
+        }
+        &::after {
+            margin-left: 20px;
+        }
+    }
+
+    &__description {
+        line-height: 1.5;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__close {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: rem(30px);
+    }
+}

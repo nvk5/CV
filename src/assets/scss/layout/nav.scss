@@ -1,0 +1,24 @@
+.nav {
+    font-size: rem(18px);
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-flat);
+    position: relative;
+    z-index: 2;
+    
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    &__link {
+        padding: 20px 0;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+}

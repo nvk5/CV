@@ -1,0 +1,53 @@
+.button {
+    box-shadow: var(--shadow-flat);
+    background: var(--bg-color);
+    transition: text-shadow .5s ease, color .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--color-hover);
+        box-shadow: var(--shadow-pressed);
+
+        .button__icon {
+            fill: var(--color-hover)
+        }
+    }
+
+    &--single-project {
+        width: 120px;
+        height: 60px;
+        margin: 10px;
+        text-transform: uppercase;
+    }
+
+    &--resume-download {
+        width: 200px;
+        height: 60px;
+        align-self: end;
+        justify-self: end;
+    }
+
+    &--language {
+        width: 50px;
+        height: 50px;
+        text-transform: uppercase;
+    }
+
+    &--socials {
+        width: 60px;
+        height: 60px;
+        padding: 17px;
+        border-radius: 50%;
+    }
+
+    &--header {
+        width: 70px;
+        height: 70px;
+        padding: 15px;
+        border-radius: 50%;
+    }
+}

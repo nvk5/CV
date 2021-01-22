@@ -1,0 +1,9 @@
+.track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: var(--border-radius-track);
+    box-shadow: var(--shadow-pressed);
+    transition: transform .5s linear;
+    z-index: -1;
+}

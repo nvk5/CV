@@ -1,0 +1,26 @@
+.tab-content {
+    &__section {
+        box-shadow: var(--shadow-flat);
+        padding: 50px;
+        border-radius: var(--border-radius);
+
+        &.hide {
+            animation: hide 2s linear;
+            clip-path: polygon(120% -20%, 120% -20%, 120% -20%);
+        }
+          
+        &.show {
+            animation: show 2s linear;
+            clip-path: polygon(120% -20%, 120% 250%, -150% -20%);
+        }
+    }
+
+    &__headline {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        font-size: rem(27px);
+    }
+}
+

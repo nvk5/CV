@@ -1,0 +1,15 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+    &__title {
+        font-size: rem(45px);
+        transform: scaleY(.9);
+    }
+
+    &__subtitle {
+        font-size: rem(23px);
+        transform: scaleY(.7);
+    }
+}

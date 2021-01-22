@@ -1,0 +1,220 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .page__body {
+        padding-right: 17px;
+    }
+
+    .button--header,
+    .header__details {
+        margin-left: auto;
+    }
+
+    .contacts__wrap {
+        grid-template: "contacts" auto "socials" auto / 1fr;
+    }
+    .contacts__block:nth-child(1) {
+        grid-area: contacts;
+    }
+    .contacts__block:nth-child(2) {
+        grid-area: socials;
+    }
+
+    .tab-content__section {
+        &.show {
+            animation: fadeIn .5s linear;
+            clip-path: none;
+        }
+        &.hide {
+            animation: fadeOut .5s linear;
+            clip-path: none;
+        }
+    }
+
+    .resume {
+        &__wrap {
+            grid-template: "aside main" auto / 1fr 2fr;
+            grid-gap: 50px;
+        }
+
+        &__aside {
+            grid-area: aside;
+        }
+
+        &__main {
+            grid-area: main;
+        }
+
+        &__main,
+        &__info,
+        &__info-list {
+            display: block;
+        }
+
+        &__block {
+            margin-bottom: 20px;
+        }
+
+        &__info-list-item {
+            margin-bottom: 15px;
+        }
+    }
+
+    .skills {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        &__item {
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
+
+        }
+    }
+
+    .portfolio {
+        &__wrap {
+            grid-template: "tabs work" minmax(600px, 1fr) /1fr 5fr;
+        }
+
+        &__tabs {
+            grid-area: tabs;
+        }
+
+        &__work {
+            grid-area: work;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        &__list-item {
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
+        }
+    }
+
+    .single-project {
+        height: auto;
+        padding-bottom: 0;
+
+        &__image {
+            display: block;
+        }
+
+        &__block {
+            display: block;
+        }
+
+        &__headline,
+        &__description {
+            margin-bottom: 30px;
+        }
+
+        &__close {
+            margin-left: auto;
+        }
+    }
+
+    .project-details {
+        &__techs,
+        &__browsers {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        &__techs-item,
+        &__browsers-item {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    }
+
+    .color-theme {
+        display: none;
+    }
+}
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Desktops, Tablets landscape 992-1199 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 1199.98px) {
+    .portfolio__list-item {
+        width: calc(50% - 20px);
+    }
+
+    .resume {
+        &__wrap {
+            grid-template: "aside" auto "main" auto / 1fr;
+        }
+
+        &__photo {
+            margin: 0 auto 20px;
+        }
+    }
+}
+
+
+/* Medium Devices, Tablets portrait 768-991 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 991.98px) {
+    .page {
+        font-size: 90%;
+    }
+
+    .header__logo {
+        margin-bottom: 20px;
+    }
+
+    .button--header,
+    .header__details {
+        margin-left: auto;
+    }
+
+    .skills__item {
+        width: calc(50% - 20px);
+    }
+
+    .portfolio {
+        &__wrap {
+            grid-template: "tabs" auto "work" auto / 1fr;
+        }
+    }
+
+    .header {
+        &__container {
+            display: block;
+        }
+    }
+}
+
+
+/* Small Devices, Phones (landscape) 576-767 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 767px) {
+    .skills__item {
+        width: calc(100% - 20px);
+    }
+
+    .portfolio__list-item {
+        width: calc(70% - 20px);
+        margin: 10px auto;
+    }
+}
+
+/* Extra Small Devices, Phones (portrait) 480-575 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 575.98px) {
+    .page {
+        font-size: 80%;
+    }
+}
+
+/* Extra Small more, Phones 320-479 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 479px) {
+    .tab-content__card {
+        width: calc(100% - 20px);
+    }
+}
