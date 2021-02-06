@@ -367,6 +367,56 @@ const projects = {
         ],
         "Приложения на React": [
             {
+                "code": "https://github.com/nvk5/pokemon",
+                "view": "https://nvk5.github.io/pokemon/build/",
+                "poster": ["assets/images/Pokemon.png", "assets/images/Pokemon.webp"],
+                "posterSm": ["assets/images/PokemonSm.png", "assets/images/PokemonSm.webp"],
+                "description": "Приложение на React и Redux, использующее pokemon API (тестовое задание). Особенности: поиск, навигация, кеширование и трансформация данных",
+                "details": {
+                    "Используемые технологии": {
+                        'SASS': "sass",
+                        'JavaScript': "js",
+                        'React': 'react',
+                        'Webpack': "webpack"
+                    },
+                    "Поддержка браузеров": {
+                        "Google Chrome 87+": "chrome",
+                        "Mozilla Firefox 83+": "firefox",
+                        "Opera 72+": "opera",
+                        "Yandex Browser 20+": "yandex",
+                        "Microsoft Edge 87+": "edge",
+                    },
+                    "Адаптивность": "responsive-valid",
+                },
+                "tag": "react",
+                "id": "Pokemon"
+            },
+            {
+                "code": "https://github.com/nvk5/abstract",
+                "view": "https://nvk5.github.io/abstract/build/",
+                "poster": ["assets/images/Abstract.png", "assets/images/Abstract.webp"],
+                "posterSm": ["assets/images/AbstractSm.png", "assets/images/AbstractSm.webp"],
+                "description": "Приложение на React (тестовое задание). Адаптивный одностраничный сайт, использующий компоненты React",
+                "details": {
+                    "Используемые технологии": {
+                        'SASS': "sass",
+                        'JavaScript': "js",
+                        'React': 'react',
+                        'Webpack': "webpack"
+                    },
+                    "Поддержка браузеров": {
+                        "Google Chrome 87+": "chrome",
+                        "Mozilla Firefox 83+": "firefox",
+                        "Opera 72+": "opera",
+                        "Yandex Browser 20+": "yandex",
+                        "Microsoft Edge 87+": "edge",
+                    },
+                    "Адаптивность": "responsive-valid",
+                },
+                "tag": "react",
+                "id": "Abstract"
+            },
+            {
                 "code": "https://github.com/nvk5/TodoApp",
                 "view": "https://nvk5.github.io/TodoApp/build/",
                 "poster": ["assets/images/TodoApp.png", "assets/images/TodoApp.webp"],

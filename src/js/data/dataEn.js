@@ -367,6 +367,57 @@ const projects = {
         ],
         "React Apps": [
             {
+                "code": "https://github.com/nvk5/pokemon",
+                "view": "https://nvk5.github.io/pokemon/build/",
+                "poster": ["assets/images/Pokemon.png", "assets/images/Pokemon.webp"],
+                "posterSm": ["assets/images/PokemonSm.png", "assets/images/PokemonSm.webp"],
+                "description": "React & Redux web application (test task). Using pokemon API to create frontend. Navigation, search, transforming data, async/await, data caching",
+                "details": {
+                    "Applied techonologies": {
+                        'SASS': "sass",
+                        'JavaScript': "js",
+                        'React': 'react',
+                        'Redux': 'redux',
+                        'Webpack': "webpack"
+                    },
+                    "Browsers support": {
+                        "Google Chrome 87+": "chrome",
+                        "Mozilla Firefox 83+": "firefox",
+                        "Opera 72+": "opera",
+                        "Yandex Browser 20+": "yandex",
+                        "Microsoft Edge 87+": "edge",
+                    },
+                    "Responsive": "responsive-valid",
+                },
+                "tag": "react",
+                "id": "Pokemon"
+            },
+            {
+                "code": "https://github.com/nvk5/abstract",
+                "view": "https://nvk5.github.io/abstract/build/",
+                "poster": ["assets/images/Abstract.png", "assets/images/Abstract.webp"],
+                "posterSm": ["assets/images/AbstractSm.png", "assets/images/AbstractSm.webp"],
+                "description": "React application (test task). Simple single page layout with React Components.",
+                "details": {
+                    "Applied techonologies": {
+                        'SASS': "sass",
+                        'JavaScript': "js",
+                        'React': 'react',
+                        'Webpack': "webpack"
+                    },
+                    "Browsers support": {
+                        "Google Chrome 87+": "chrome",
+                        "Mozilla Firefox 83+": "firefox",
+                        "Opera 72+": "opera",
+                        "Yandex Browser 20+": "yandex",
+                        "Microsoft Edge 87+": "edge",
+                    },
+                    "Responsive": "responsive-valid",
+                },
+                "tag": "react",
+                "id": "Abstract"
+            },
+            {
                 "code": "https://github.com/nvk5/TodoApp",
                 "view": "https://nvk5.github.io/TodoApp/build/",
                 "poster": ["assets/images/TodoApp.png", "assets/images/TodoApp.webp"],
