@@ -148,8 +148,7 @@ module.exports = {
         } 
     },
     devServer: {
-        port: 4200,
-        host: '192.168.0.104',
+        port: 5000,
     },
     plugins: [
         new MiniCssExtractPlugin({filename: filename('css')}),

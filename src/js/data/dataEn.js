@@ -488,12 +488,17 @@ const skills = {
         {
             "name": "JavaScript",
             "img": "js",
-            "description": "Basic JavaScript knowledges for interactive elements. Using ES6+ syntax",
+            "description": "Using JavaScript for interactive elements (ES6+)",
         },
         {
             "name": "Libraries",
             "img": "react",
-            "description": "Using both native techonologies and various libraries such as jQuery, Bootstrap. Basic knowledges of ReactJS & Redux",
+            "description": "Using both native techonologies and various libraries such as jQuery, Bootstrap, ReactJS & Redux",
+        },
+        {
+            "name": "Server code",
+            "img": "node",
+            "description": "Basic knowledges of NodeJS and Express. Have some experience of developing NodeJS & MongoDB apps"
         },
         {
             "name": "Gulp / Webpack",
@@ -546,10 +551,6 @@ const contacts = {
                 "telegram": {
                     "href": "https://t.me/nvkdev5",
                     "icon": "telegram"
-                },
-                "vkontakte": {
-                    "href": "https://vk.com/id429617755",
-                    "icon": "vk"
                 },
                 "whatsapp": {
                     "href": "https://wa.me/79869704659",
