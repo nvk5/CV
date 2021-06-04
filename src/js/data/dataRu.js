@@ -552,10 +552,6 @@ const contacts = {
                     "href": "https://t.me/nvkdev5",
                     "icon": "telegram"
                 },
-                "vkontakte": {
-                    "href": "https://vk.com/id429617755",
-                    "icon": "vk"
-                },
                 "whatsapp": {
                     "href": "https://wa.me/79869704659",
                     "icon": "whatsapp"
